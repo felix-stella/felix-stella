@@ -1,9 +1,3 @@
-| 项目 |链接 |
-|:-----------------:|:---------------:|
-| 软件工程 | [软件工程链接](https://edu.cnblogs.com/campus/gdgy/CSGrade21-12)🔗 |
-| 作业要求 | [作业要求的链接](https://edu.cnblogs.com/campus/gdgy/CSGrade21-12/homework/13015)🔗 |
-| 作业目标 | 自我介绍，学习使用github以及博客，学会markdowm排版 |
-
 # 自我介绍
 李金强，来自广东茂名
 GDUT(989大学)21级计算机科学与技术专业的本科生
