@@ -12,10 +12,12 @@ class TextSimilarityCalculator:
         self.similarity_score = None  # 初始化相似度分数为 None
 
     @staticmethod
+    # 使用jieba对文本进行分词
     def preprocess_text(text):
         words = jieba.cut(text)
         return ' '.join(words)
 
+    # 使用TF-IDF算法计算两文本间的相似度
     def calculate_similarity(self):
         preprocessed_original_text = self.preprocess_text(self.original_text)
         preprocessed_plagiarized_text = self.preprocess_text(self.plagiarized_text)
@@ -27,6 +29,7 @@ class TextSimilarityCalculator:
         self.similarity_score = similarity[0][0]  # 将相似度分数保存在实例变量中
         return self.similarity_score
 
+    # 对文本相似度以文件形式进行保存
     def calculate_and_save_similarity(self, output_file):
         similarity_score = self.calculate_similarity()
         similarity_score = round(similarity_score, 2)
